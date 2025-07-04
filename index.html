@@ -43,6 +43,7 @@
 						list-style:none;
 						margin:0;
 						padding:0;
+						float:left;
 						}
 
 					#titlearea ul li a:link,#titlearea ul li a:visited{
@@ -72,7 +73,7 @@
 								text-decoration:none;
 								background:#A0534C;
 								padding:10px 25px;
-								float:right;
+							
 								}
 
 
@@ -94,7 +95,7 @@
 
 				}
 
-					#recap1{
+					#recep1{
 						width:750px;
 						height:700px;
 						background-color:white;
@@ -102,7 +103,7 @@
 						margin:25px;
 						}
 
-					#recap2{
+					#recep2{
 						width:610px;
 						height:660px;
 						background-color:white;
@@ -110,13 +111,39 @@
 						margin:25px;
 						}
 
-						#recap2 h1{
+						#recep2 h1{
 							padding:20px;
 							font-family:'Courgette', cursive;
 							font-size:45px;
 								}
 
-						#recap2 p{
+						#recep2 h1{
+							text-align:center;
+							position:relative;
+
+								}
+
+						#recep2 h1:before, #recep2 h1:after{
+										position:absolute;
+										background:red;
+										width:25%;
+										height:1px;
+										content:"";
+										z-index:1200px;
+										}
+
+						#recep2 h1:before{
+								left:0;
+
+								}
+
+						#recep2 h1:after{
+
+								right:0;
+
+								}
+
+						#recep2 p{
 							padding:20px;
 							font-style:monospace;
 							font-size:20px;
@@ -136,6 +163,10 @@
 							background:#A0534C;
 							color:white;
 								}
+
+
+
+							
 
 
 				
@@ -250,6 +281,7 @@
 						background-color:#A0534C;
 						float:left;
 						overflow:hidden;
+						
 						}
 
 					#inbox4 img{
@@ -322,14 +354,13 @@
 				width:1500px;
 				height:700px;
 				background-color:beige;
-
+				position:relative;
+				top:0;
+				z-index:1000px;		
 				}
 
 			#boxarea img{
-					position:relative;
-					top:0;
 					opacity:0.8;
-					
 					}
 
 			#details{
@@ -340,7 +371,7 @@
 				color:white;
 				font-size:80px;
 				font-style:italic;
-				text-shadow:-3px 3px 0 orange;
+				text-shadow:-6px 6px 2px #A0534C;
 				
 					}
 
@@ -448,9 +479,36 @@
 					
 					}
 
-				
+				@media print{
 
-				
+					#menuarea{
+						display:none;
+
+						}
+
+					}
+
+		#xyz  ul{
+			list-style:none;
+
+
+			}
+			
+		#xyz ul li{
+			float:left;
+
+			}
+
+		#xyz ul li:after{
+			content:" / ";
+				}
+
+		#xyz ul li:last-child:after{
+					content:" ";
+
+					}
+
+	
 
 		</style>
 	</head>
@@ -463,7 +521,7 @@
 
 			<div id="menuarea">
 				<div id="logoarea">
-					<img src="download.jpeg"/><img src="logo.png" / >
+					<img src="images/download.jpeg"/><img src="images/logo.png" / >
 				</div>
 
 				<div id="titlearea">
@@ -483,7 +541,7 @@
 
 			<div id="videoarea">
 				<video width="100%" height="100%" autoplay muted loop>
-					<source src="video.mp4" type="video/mp4"/ >
+					<source src="images/video.mp4" type="video/mp4"/ >
 
 				</video>
 
@@ -491,13 +549,13 @@
 			</div>
 
 			<div id="receparea">
-				<div id="recap1">
+				<div id="recep1">
 					<div>
-						<img src="reception.jpg" / width="100%" height="100%">
+						<img src="images/reception.jpg" / width="100%" height="100%">
 					</div>
 				</div>
 
-				<div id="recap2">
+				<div id="recep2">
 					<h1>YOUR destination IN JAMSHEDPUR</h1>
 
 					<p>Discover the perfect blend of nature, luxury, and adventure at Sunset Plaza, where every moment is designed to create unforgettable memories. Nestled in the heart of nature and surrounded by lush green landscapes, our resort offers the best in hospitality, making us Jamshedpur's best resort for couples, families, and business retreats alike. We offer a world-class venue, modern rooms, diverse dining options, and a range of recreational activities that cater to every need.</p>
@@ -513,7 +571,7 @@
 			<div id="darea">
 				<div id="d1">
 					<div id="inside1">
-						<img src="image-3.jpg"/ width="100%" height="100%">
+						<img src="images/image-3.jpg"/ width="100%" height="100%">
 
 					</div>
 
@@ -523,7 +581,7 @@
 					</div>
 
 					<div id="inside3">
-						<img src="image-1.jpg"/ width="100%" height="100%">
+						<img src="images/image-1.jpg"/ width="100%" height="100%">
 					</div>
 
 					<div id="inside4">
@@ -539,7 +597,7 @@
 					</div>
 
 					<div id="inbox2">
-						<img src="event.jpg"/ width="100%" height="100%">
+						<img src="images/event.jpg"/ width="100%" height="100%">
 					</div>
 
 					<div id="inbox3">
@@ -549,14 +607,14 @@
 					</div>
 
 					<div id="inbox4">
-						<img src="wedding.jpg"/ width="100%" height="100%">
+						<img src="images/wedding.jpg"/ width="100%" height="100%">
 					</div>
 				</div>
 			</div>
 
 			<div id="diningarea">
 				<div id="area1">
-					<img src="dining.jpg" / width="100%" height="100%">
+					<img src="images/dining.jpg" / width="100%" height="100%">
 
 					
 				</div>
@@ -593,13 +651,13 @@
 				</div>
 
 				<div id="sparea2">
-					<img src="spa.jpeg"/ width="100%" height="100%">
+					<img src="images/spa.jpeg"/ width="100%" height="100%">
 				</div>
 			</div>
 
 			<div id="footerarea">
 				<div id="f1">
-					<img src="download.jpeg"/><img src="logo.png" / >
+					<img src="images/download.jpeg"/><img src="images/logo.png" / >
 
 				</div>
 
@@ -621,11 +679,25 @@
 				</div>
 			</div>
 
+			<hr width-left=>
 
-	
+			<h5 align="center">Developed By:- Jyoti Bhagat</h5>
+
+		<div id="xyz">	
+			<ul>
+				<li>Home</li>
+				<li>About</li>
+				<li>Gallery</li>
+				<li>Contact</li>
+
+
+
+
+			</ul>
 		</div>
 
-		<hr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Designed by :- Jyoti Bhagat | Under The Guidance:- Kunal Mahto<hr>
+
+		</div>
 
 
 	</body>
